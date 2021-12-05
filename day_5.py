@@ -42,18 +42,9 @@ def overlaps_of_points(diagonal):
             start = f"{coord[0][0], coord[0][1]}"
             board[start] = board.get(start, 0) + 1
 
-            if coord[1][0] > coord[0][0] and coord[1][1] > coord[0][1]:
-                xm = 1
-                ym = 1
-            elif coord[1][0] > coord[0][0] and coord[0][1] > coord[1][1]:
-                xm = 1
-                ym = -1
-            elif coord[0][0] > coord[1][0] and coord[1][1] > coord[0][1]:
-                xm = -1
-                ym = 1
-            else:
-                xm = -1
-                ym = -1
+            sign = lambda x: (x<0) - (x>0)
+            xm = sign(dx)
+            ym = sign(dy)
 
             for diag in range(1, abs(coord[0][0]-coord[1][0])+1):
                 str_point = f"{coord[0][0]+xm*diag, coord[0][1]+ym*diag}"
