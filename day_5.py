@@ -2,7 +2,7 @@
 Day 5 of Advent of Code
 """
 def file():
-    with open("day5_data.txt") as file:
+    with open("input_data/day5_data.txt") as file:
         lines = file.read().split("\n")
         data = []
         for line in lines:

@@ -26,5 +26,5 @@ def horizontal_dist(data, part2=False):
     return int(best_diff)
 
 if __name__== "__main__":
-    data = data_read("day7_data.txt")
+    data = data_read("input_data/day7_data.txt")
     print(f"Least distance for crabs part 1: {horizontal_dist(data)}, part 2: {horizontal_dist(data,True)}")

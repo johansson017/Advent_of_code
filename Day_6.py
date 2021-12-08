@@ -2,7 +2,7 @@
 Day 6 of Advent of Code
 """
 def data_read():
-    with open("day6_data.txt") as file:
+    with open("input_data/day6_data.txt") as file:
         data = file.readline().strip()
         data = list(map(int, data.split(",")))
         return data

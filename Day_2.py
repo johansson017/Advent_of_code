@@ -2,7 +2,7 @@
 Day 2 of AdventofCode
 """
 
-with open("day2_data.txt") as file:
+with open("input_data/day2_data.txt") as file:
     f = file.read()
     temp = f.split("\n")
 

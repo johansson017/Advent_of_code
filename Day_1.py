@@ -3,7 +3,7 @@ Day1 of AdventofCode
 """
 import numpy as np
 
-with open("sonar_data.txt") as file:
+with open("input_data/sonar_data.txt") as file:
     f = file.read()
     sonar = list(map(int, f.split("\n")))
 

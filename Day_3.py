@@ -2,7 +2,7 @@
 Day 3 of AdventofCode
 """
 from collections import Counter
-with open("day3_data.txt") as file:
+with open("input_data/day3_data.txt") as file:
     f = file.read()
     data = f.split("\n")
 

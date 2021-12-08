@@ -2,7 +2,7 @@
 Day 4 of Advent of Code
 """
 def read_data():
-    with open("day4_data.txt") as file:
+    with open("input_data/day4_data.txt") as file:
         number_draw = file.readline()
         number_draw = list(map(int, number_draw.split(",")))
         temp = file.readline()
