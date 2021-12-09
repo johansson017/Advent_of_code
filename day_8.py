@@ -17,7 +17,6 @@ def puzzle_input():
             td = td.strip().split(" ")
             for d in td:
                 data1.append(d)
-
     return all_data, data1
 
 def decoding(alphabet, right):

@@ -28,5 +28,3 @@ for ind, val in enumerate(sonar):
         if np.sum(vals[-3:]) > np.sum(vals[0:3]):
             increases += 1
         vals.remove(vals[0])
-
-print(increases)
