@@ -43,7 +43,7 @@ def part1(x,y,mapNumbers):
     return True
 
 def plotting(mapBinary):
-    ax = sns.heatmap(mapBinary, linewidths=0.5, annot=True, square=True)
+    ax = sns.heatmap(mapBinary, linewidths=0.5, square=True, cmap="binary", cbar=False, xticklabels=False, yticklabels=False)
     plt.show()
 
 def day_9(mapNumbers, mapBinary, plot=False):
