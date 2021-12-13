@@ -18,8 +18,7 @@ def day10(file):
 
     strings = [line for line in open(file).read().split("\n")]
     
-    scores = list()
-    sum = 0
+    sum, scores = 0, list()
     for line in strings:
         visited = list()
         for i, char in enumerate(line):
@@ -46,7 +45,7 @@ if __name__ == "__main__":
     test = False
     part1,part2 = day10(("input_data/day10_testdata.txt" if test == True else "input_data/day10_data.txt"))
     print(f"Result for part 1: {part1}\nResult for part 2: {part2}")
-
+    
 
 
 
